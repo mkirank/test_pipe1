@@ -15,33 +15,10 @@ jobs:
       - TASK:
         - script: sleep 1
     flags:
-        - flag1
-        - flag2
-        - flag3
+        - flag_pipe1
   - name: runSh_3
     type: runSh
     steps:
       - IN: runSh_2
       - TASK:
         - script: sleep 1   
-        
-  - name: runSh_4
-    type: runSh
-    steps:
-      - IN: runSh_3
-      - IN: time-trigger
-      - TASK:
-        - script: sleep 1
-        
-  - name: runSh_5
-    type: runSh
-    steps:
-      - TASK:
-        - script: sleep 1           
-        
-  - name: runSh_6
-    type: runSh
-    steps:
-      - IN: runSh_5
-      - TASK:
-        - script: sleep 1

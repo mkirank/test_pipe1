@@ -1,5 +1,5 @@
 resources:
-  - name: time-trigger
+  - name: time-trigger_1
     type: time
     seed: 
       interval: "1 1 */1 * *"
